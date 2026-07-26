@@ -145,7 +145,9 @@ if makefolder and isfolder and writefile and isfile then
 				writefile(path, game:HttpGet((path:gsub("infiniteyield/", assets))))
 			end
 		end
-		-- honestly just blame your phone if the assets appear in your gallery
+		pcall(function()
+			writefile("infiniteyield/assets/logo.png", game:HttpGet("https://raw.githubusercontent.com/lowkeymyself/Limited-Yield/main/logo.png"))
+		end)
 		if IsOnMobile then writefile("infiniteyield/assets/.nomedia", "") end
 	end)
 end
